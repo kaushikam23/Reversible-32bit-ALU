@@ -20,6 +20,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 
  module half_adder(output sum, output carry, input a, input b);
-    XOR_GATE u1(.z(sum), .a(a), .b(b));
-    AND_GATE u2(.C(carry), .A(a), .B(b));
+    xor_gate u1(.z(sum), .a(a), .b(b));
+    and_gate u2(.C(carry), .A(a), .B(b));
   endmodule

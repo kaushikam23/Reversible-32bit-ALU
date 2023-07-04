@@ -1,30 +1,9 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 26.06.2023 14:53:16
-// Design Name: 
-// Module Name: xor_gate_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-module XOR_GATE_TB;
+module xor_gate_tb;
   reg a, b;
   wire z;
 
   // Instantiate the XOR gate
-  XOR_GATE uut(
+  xor_gate uut(
     .z(z),
     .a(a),
     .b(b)

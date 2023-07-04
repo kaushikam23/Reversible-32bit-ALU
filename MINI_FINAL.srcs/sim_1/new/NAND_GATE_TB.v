@@ -1,29 +1,8 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 04.07.2023 13:33:22
-// Design Name: 
-// Module Name: NAND_GATE_TB
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-module NAND_GATE_TB;
+module nand_gate_tb;
     reg A,B;
     wire C;
     
-    NAND_GATE uut (.C(C),.A(A), .B(B));
+  nand_gate uut (.C(C),.A(A), .B(B));
     
      reg clk=0;
      always #5 clk = ~clk;

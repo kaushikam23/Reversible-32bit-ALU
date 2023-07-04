@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04.07.2023 14:10:16
+// Create Date: 05.07.2023 00:52:53
 // Design Name: 
-// Module Name: HALF_ADDER_TB
+// Module Name: HAlLF_ADDER_TB
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module HALF_ADDER_TB;
+module half_adder_tb;
     wire sum,carry;
     reg a,b;
     

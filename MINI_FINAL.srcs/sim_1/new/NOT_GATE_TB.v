@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04.07.2023 13:41:16
+// Create Date: 05.07.2023 00:46:30
 // Design Name: 
 // Module Name: NOT_GATE_TB
 // Project Name: 
@@ -18,11 +18,11 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-module NOT_GATE_TB;
+module not_gate_tb;
     reg A;
     wire C;
     
-    NOT_GATE uut (.c(C),.a(A));
+    not_gate uut (.c(C),.a(A));
     
      reg clk=0;
      always #5 clk = ~clk;
@@ -41,3 +41,4 @@ module NOT_GATE_TB;
     $finish; // End simulation
   end
 endmodule
+

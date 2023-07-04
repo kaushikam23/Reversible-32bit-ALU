@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 26.06.2023 13:56:17
+// Create Date: 05.07.2023 00:43:09
 // Design Name: 
-// Module Name: toffoli_tb
+// Module Name: TOFFOLI_TB
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ToffoliGate_TB;
+module toffolli_tb;
   reg a,b,c;
   wire z;
 
@@ -61,3 +61,4 @@ module ToffoliGate_TB;
     $finish; // End simulation
   end
 endmodule
+

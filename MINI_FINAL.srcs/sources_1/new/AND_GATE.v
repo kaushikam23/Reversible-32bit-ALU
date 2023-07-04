@@ -20,9 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module AND_GATE(output C, input A, input B);
+module and_gate(output C, input A, input B);
     
     toffoli_gate u1(.z(C), .a(A), .b(B), .c(1'b0));
-
 
 endmodule

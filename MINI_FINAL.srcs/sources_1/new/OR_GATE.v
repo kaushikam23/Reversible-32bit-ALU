@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module OR_GATE(output z, input a, input b);
+module or_gate(output z, input a, input b);
   wire t1,t2;
   toffoli_gate u1(.z(t1), .a(a),.b(1'b1), .c(1'b1));
   toffoli_gate u2(.z(t2), .a(b), .b(1'b1), .c(1'b1));

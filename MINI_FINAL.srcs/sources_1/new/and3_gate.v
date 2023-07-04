@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04.07.2023 13:32:25
+// Create Date: 05.07.2023 03:06:18
 // Design Name: 
-// Module Name: NAND_GATE
+// Module Name: and3_gate
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,9 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module nand_gate(output C, input A, input B);
+module and3_gate(
+    output C,
+    input A,
+    input B,
+    input D,
+    input C_in
+    );
     
-    toffoli_gate u1(.z(C), .a(A), .b(B), .c(1'b1));
-
-
+    toffoli_gate u1 (.z(C), .a(A), .b(B), .c(C_in));
+    toffoli_gate u2 (.z(C), .a(C), .b(D), .c(C_in));
+    
 endmodule
+

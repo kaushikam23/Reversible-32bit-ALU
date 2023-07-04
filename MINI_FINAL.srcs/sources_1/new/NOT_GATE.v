@@ -18,6 +18,6 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-module NOT_GATE(output c, input a);
+module not_gate(output c, input a);
   toffoli_gate u1(.z(c), .a(a), .b(1'b1), .c(1'b1));
 endmodule
