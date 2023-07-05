@@ -24,12 +24,13 @@ module and3_gate(
     output C,
     input A,
     input B,
-    input D,
     input C_in
     );
     
-    toffoli_gate u1 (.z(C), .a(A), .b(B), .c(C_in));
-    toffoli_gate u2 (.z(C), .a(C), .b(D), .c(C_in));
+    wire s;
+    
+    toffoli_gate u1 (.z(s), .a(A), .b(B), .c(0));
+    toffoli_gate u2 (.z(C), .a(s), .b(C_in), .c(0));
     
 endmodule
 

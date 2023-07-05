@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04.07.2023 13:32:25
+// Create Date: 05.07.2023 13:23:01
 // Design Name: 
-// Module Name: NAND_GATE
+// Module Name: bitwise_xor
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,9 +20,20 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module nand_gate(output C, input A, input B);
-    
-    toffoli_gate u1(.z(C), .a(A), .b(B), .c(1'b1));
+module bitwise_xor(
+  input [31:0] a,
+  input [31:0] b,
+  output [31:0] result
+);
+  wire [31:0] xor_output;
 
+  // Instantiate 32 instances of the xor_gate module
+  xor_gate u_xor[31:0](
+    .a(a),
+    .b(b),
+    .z(xor_output)
+  );
 
+  // Assign the xor_output to the result
+  assign result = xor_output;
 endmodule

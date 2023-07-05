@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 26.06.2023 15:32:16
+// Create Date: 05.07.2023 15:17:19
 // Design Name: 
-// Module Name: or_gate
+// Module Name: bitwise_xor_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,9 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module or_gate(output z, input a, input b);
-  wire t1,t2;
-  toffoli_gate u1(.z(t1), .a(a),.b(1'b1), .c(1'b1));
-  toffoli_gate u2(.z(t2), .a(b), .b(1'b1), .c(1'b1));
-  toffoli_gate u3(.z(z), .a(t1), .b(t2), .c(1'b1));
+
+module bitwise_xor_tb(
+
+    );
 endmodule

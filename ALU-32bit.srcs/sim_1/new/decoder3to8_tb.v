@@ -5,13 +5,13 @@ module decoder3to8_tb;
     reg e;
     
     // Outputs
-    wire [7:0] o;
+    wire [7:0] out;
     
     // Instantiate the decoder3to8_reversible module
-    decoder3to8_reversible dut (
+    decoder3to8 dut (
         .i(i),
         .e(e),
-        .o(o)
+        .out(out)
     );
     
     // Stimulus
@@ -20,13 +20,17 @@ module decoder3to8_tb;
         i = 3'b000;
         e = 1'b1;
         #10; // Wait for combinational logic to settle
-        $display("Output o: %b", o);
+        $display("Output o: %b", out);
         
+        i = 3'b111;
+        e = 1'b1;
+        #10; // Wait for combinational logic to settle
+        $display("Output o: %b", out);
         // Test case 2: Inputs i=3'b101, e=0
         i = 3'b101;
         e = 1'b0;
         #10; // Wait for combinational logic to settle
-        $display("Output o: %b", o);
+        $display("Output o: %b", out);
         
         // Add more test cases...
         

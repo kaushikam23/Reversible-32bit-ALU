@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04.07.2023 13:13:20
+// Create Date: 05.07.2023 15:17:00
 // Design Name: 
-// Module Name: NAND_GATE
+// Module Name: bitwise_or_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,8 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module and_gate(output C, input A, input B);
-    
-    toffoli_gate u1(.z(C), .a(A), .b(B), .c(1'b0));
+module bitwise_or_tb(
 
+    );
 endmodule
