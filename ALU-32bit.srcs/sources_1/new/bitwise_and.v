@@ -21,28 +21,22 @@
 
 
 module bitwise_and(
-  output reg [31:0] result,
+  output  [31:0]result,
   input [31:0] a,
   input [31:0] b
+
 );
-  reg [31:0] and_output;
+  wire [31:0] and_output;
 
   // Instantiate 32 instances of the and_gate module
-  genvar i;
-  generate
-    for (i = 0; i < 32; i = i + 1) begin : AND_INST
-      and_gate u_and (
-        .C(and_output[i]),
-        .A(a[i]),
-        .B(b[i])
-      );
-    end
-  endgenerate
+  and_gate u1[31:0](
+    .C(and_output),
+    .A(a),
+    .B(b)
+  );
 
   // Assign the and_output to the result
-  always @*
-    result = and_output;
-
+   assign result = and_output;
 endmodule
 
 
