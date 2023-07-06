@@ -22,9 +22,9 @@
 module decoder2to4(
     input [1:0] in,
     input en,
-    output [3:0] out
+    output reg [3:0] out
     );
-    
+    wire [3:0] o;
     wire [1:0] g;
     wire [3:0] j;
     
@@ -39,7 +39,17 @@ module decoder2to4(
     and_gate a4 (.C(j[3]), .A(in[0]), .B(in[1]));
     
     // Output and enable logic
-    assign out = (en) ? j : 4'b0;
+    initial
+    begin
+        if (en)
+        begin
+            out = o;
+        end
+        else
+        begin
+            out = 3'bx;
+        end
+    end
     
 endmodule
 

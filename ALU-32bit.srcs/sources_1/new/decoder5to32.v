@@ -23,7 +23,7 @@
 module decoder5to32(
     input [4:0] a,
     input en,
-    output [31:0] y
+    output reg [31:0] y
     );
     
 //module decoder3to8(input [2:0] i,input e,output [7:0] o);
@@ -42,8 +42,16 @@ module decoder5to32(
     decoder3to8 d4(a[2:0], w[2], o3);
     decoder3to8 d5(a[2:0], w[3], o4);
     
-    // Output assignment
-    assign y = {o4,o3,o2,o1};
-    
+       initial
+    begin
+        if (en)
+        begin
+             y = {o4,o3,o2,o1};
+        end
+        else
+        begin
+            y = 32'bx;
+        end
+    end          
     
 endmodule

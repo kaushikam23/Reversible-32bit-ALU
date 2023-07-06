@@ -43,7 +43,7 @@ module decoder3to8(
             and3_gate a6 (.C(o[5]), .A(i[0]), .B(s[1]), .C_in(i[2]));
             and3_gate a7 (.C(o[6]), .A(i[0]), .B(i[1]), .C_in(s[2]));
             and3_gate a8 (.C(o[7]), .A(i[0]), .B(i[1]), .C_in(i[2]));
-    always @*
+    initial
     begin
         if (e)
         begin

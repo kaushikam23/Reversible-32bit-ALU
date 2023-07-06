@@ -23,7 +23,17 @@ module decoder5to32_tb;
         $display("Output y: %b", y);
         
         // Test case 2: Inputs a=5'b11111, en=0
+        a = 5'b00111;
+        en = 1'b1;
+        #10; // Wait for combinational logic to settle
+        $display("Output y: %b", y);
+        
         a = 5'b11111;
+        en = 1'b1;
+        #10; // Wait for combinational logic to settle
+        $display("Output y: %b", y);
+        
+        a = 5'b0011;
         en = 1'b0;
         #10; // Wait for combinational logic to settle
         $display("Output y: %b", y);

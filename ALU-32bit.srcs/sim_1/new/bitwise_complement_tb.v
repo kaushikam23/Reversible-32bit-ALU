@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05.07.2023 15:17:19
+// Create Date: 06.07.2023 21:32:54
 // Design Name: 
-// Module Name: bitwise_xor_tb
+// Module Name: bitwise_complement_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,21 +19,24 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module bitwise_xor_tb;
-  wire [31:0] r;
+module bitwise_complement_tb;
   reg [31:0] A;
-  reg [31:0] B;
+  reg  con;
+  wire [31:0] B;
 
   // Instantiate the DUT (Design Under Test)
-  bitwise_xor uut (.a(A), .b(B), .result(r));
+  bitwise_complement uut (.a(A), .con(con), .b(B));
 
   initial begin
     A = 32'b10101010_00000000_10101010_00000000;
-    B = 32'b10101010_10101010_10101010_10101010;
-
+    con = 0;
     #10; // Wait for combinational logic to settle
-    $display("Output C: %b", r);
+    $display("Output C: %b", B);
+    
+    A = 32'b10101010_00000000_10101010_00000000;
+    con = 1;
+    #10; // Wait for combinational logic to settle
+    $display("Output C: %b", B);
    $finish; // End the simulation
   end
 endmodule
