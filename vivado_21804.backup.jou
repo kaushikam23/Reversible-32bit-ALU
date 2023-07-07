@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Jul  5 04:45:35 2023
+# Process ID: 21804
+# Current directory: C:/Users/asrin/Desktop/Reversible-32bit-ALU/ALU-32bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5412 C:\Users\asrin\Desktop\Reversible-32bit-ALU\ALU-32bit\ALU-32bit.xpr
+# Log file: C:/Users/asrin/Desktop/Reversible-32bit-ALU/ALU-32bit/vivado.log
+# Journal file: C:/Users/asrin/Desktop/Reversible-32bit-ALU/ALU-32bit\vivado.jou
+# Running On: Aditya, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 4, Host memory: 8341 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/asrin/Desktop/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.xpr
+update_compile_order -fileset sources_1
+set_msg_config -suppress -id {Project 1-19} 
+export_ip_user_files -of_objects  [get_files C:/Users/asrin/Desktop/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sim_1/new/HAlLF_ADDER_TB.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/asrin/Desktop/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sim_1/new/HAlLF_ADDER_TB.v
+close [ open C:/Users/asrin/Desktop/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/bitwise_and.v w ]
+add_files C:/Users/asrin/Desktop/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/bitwise_and.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/asrin/Desktop/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/bitwise_or.v w ]
+add_files C:/Users/asrin/Desktop/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/bitwise_or.v
+update_compile_order -fileset sources_1

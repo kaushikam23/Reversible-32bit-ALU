@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+A=     12345, B=      6789, Output=      4097
+A=     12345, B=      6789, Output=      4097
+A=3535093811, B=         0, Output=         1
+$finish called at time : 30 ns : File "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sim_1/new/alu_main_tb.v" Line 51

@@ -1,0 +1,30 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/AND_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/OR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/TOFFOLI_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module toffoli_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/XOR_GATE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/adder_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_carry_adder_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/alu_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/bitwise_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitwise_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/bitwise_compliment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitwise_complement
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/bitwise_or.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitwise_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/bitwise_xor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitwise_xor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/boolean.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bool_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/comparator_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sources_1/new/shift_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_bit_shift
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/amuly/Reversible-32bit-ALU/Reversible-32bit-ALU/ALU-32bit/ALU-32bit.srcs/sim_1/new/alu_main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_main_tb

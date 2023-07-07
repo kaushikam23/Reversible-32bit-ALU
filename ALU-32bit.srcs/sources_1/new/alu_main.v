@@ -38,18 +38,10 @@ module alu_main(
     always @*
     begin
     case(CONTROL[7:6])
-    2'b00: begin
-               OUT=t1;               
-               end
-    2'b01: begin
-               OUT=t2;               
-               end
-    2'b10: begin
-               OUT=t3;              
-               end
-    2'b11: begin
-               OUT=t4;
-               end
+    2'b00:  OUT=t1;   
+    2'b01:  OUT=t2;           
+    2'b10: OUT=t3;              
+    2'b11: OUT=t4;
     default: OUT=32'bx;
     endcase
     end
