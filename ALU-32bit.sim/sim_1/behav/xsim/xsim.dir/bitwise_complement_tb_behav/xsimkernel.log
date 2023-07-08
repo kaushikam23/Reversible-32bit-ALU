@@ -1,7 +1,0 @@
-Running: xsim.dir/bitwise_complement_tb_behav/xsimk.exe -simmode gui -wdb bitwise_complement_tb_behav.wdb -simrunnum 0 -socket 64301
-Design successfully loaded
-Design Loading Memory Usage: 7872 KB (Peak: 7872 KB)
-Design Loading CPU Usage: 61 ms
-Simulation completed
-Simulation Memory Usage: 8476 KB (Peak: 8476 KB)
-Simulation CPU Usage: 264 ms
